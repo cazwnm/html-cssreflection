@@ -1,0 +1,14 @@
+@import "_variables.scss";
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+// body element by default has 8px margin
+body {
+    margin: 0px;
+}
+
+// Import the media queries after the mobile width styling so it will be applied first.
+@import "_media_queries.scss";

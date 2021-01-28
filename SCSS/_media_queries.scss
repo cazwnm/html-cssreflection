@@ -1,0 +1,24 @@
+@import "_variables.scss";
+
+// Media queries are used when the browser width meets the requirement of the media query.
+
+// This media query is applied when the browser width is at least 768px wide.
+// This media query will override/update the styling in index.scss (mobile styling)
+@media (min-width: 768px) {
+
+}
+
+// This media query is applied when the browser width is at least 993px wide.
+// This media query will override/update the styling in index.scss (mobile styling), and the 768px media query.
+@media (min-width: 993px) {
+
+}
+
+// This media query is applied when the browser width is at least 1278px wide.
+// This media query will override/update the styling in index.scss (mobile styling), the 768px media query, and the 993px media query.
+@media (min-width: 1278px) {
+
+}
+
+// And because CSS is cascading, code further down, 
+// overrides the previous code if possible

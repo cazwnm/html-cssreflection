@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,qBAAqB;CACrC;;AAGD,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,GAAG;CACd",
+    "sources": [
+        "index.scss",
+        "_variables.scss",
+        "_media_queries.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
