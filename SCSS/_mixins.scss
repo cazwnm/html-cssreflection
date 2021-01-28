@@ -1,0 +1,153 @@
+@import "_variables.scss";
+
+$colours: (
+    web  #926fb1 #79539a "../Images/Web_Design_Slide.jpg",
+    it  #4183d7 #286abd "../Images/IT_Support_Slide.jpg",
+    telecoms  #d64541 #bc2c28 "../Images/Telecoms_Slide.jpg",
+    bespoke  #67809f #526781 "../Images/Bespoke_Software_Slide.jpg",
+    digital  #2eec71 #25a25a "../Images/Digital_Marketing_Slide.jpg",
+    cyber  #f62459 #de093f "../Images/Cyber_Security_Slide.jpg",
+);
+
+@each $name, $light_color, $dark_color, $image_path in $colours {
+    .slideshow_container {
+        .#{$name}_slide_container {
+            .slide_content_boundaries {
+                .slide_content {
+                    
+                    a {
+                        background-color: $light_color;
+
+                        // & selects the parent selector to use
+                        // this is equal to a:hover
+                        &:hover {
+                            background-color: $dark_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .card_container {
+        .card_width_container {
+            .#{$name}_card {
+
+                .icon_circle,
+                a {
+                    background-color: $light_color;
+
+                    // & selects the parent selector to use
+                    // this is equal to a:hover
+                }
+
+                // When the card is hovered on, apply this
+                &:hover {
+                    background-color: $light_color;
+
+                    .icon_circle,
+                    a {
+                        background-color: white;
+                        color: $light_color;
+
+                        i {
+                            color: $light_color;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+// @each $name, $col, $dark_col in $colours {
+//     .#{$name}_hover {
+//             a .fa {
+//                 color: $col;
+//         }
+//     }
+//     .#{$name}_hover:hover {
+//         background-color: $col;
+//         margin-left: auto;
+//         margin-right: auto;
+//         .#{$name}_contents {
+//             display: flex;
+//             .content_position {
+//                 display: flex;
+//                 background-color: $dark_col;
+//                 a {
+//                     background-color: $dark_col;
+//                 }
+//             }
+//             background-color: $dark_col;
+//         }
+//         a .fa {
+//             color: white;
+//         }
+//     }
+// }
+
+// @each $name, $col, $dark_col in $colours {
+//     .card_#{$name} {
+//         .#{$name}_icon_background {
+//             background-color: $col;
+//         }
+//         .btn_#{$name} {
+//             background-color: $col;
+//             color: white;
+//         }
+//     }
+//     .card_#{$name}:hover {
+//         background-color: $col;
+//         color: white;
+//         .#{$name}_icon_background {
+//             background-color: white;
+//         }
+//         .btn_#{$name},
+//         .fa {
+//             color: $col;
+//         }
+//         .btn {
+//             background-color: white;
+//         }
+//     }
+// }
+
+// @each $name, $normal_col, $hover_col in $colours {
+//     .news_info_#{$name} {
+//         display: block;
+//         .card_image_container {
+//             .tab_boundaries {
+//                 .tab_link {
+//                     background-color: $normal_col;
+//                 }
+//             }
+//         }
+//         .news_title {
+//             color: $normal_col;
+//             text-decoration: none;
+//         }
+//         .news_title:hover {
+//             color: $normal_col;
+//         }
+//         .read_more_button {
+//             background-color: $normal_col;
+//         }
+//         .read_more_button:hover {
+//             background-color: $hover_col;
+//         }
+//     }
+
+//     .slide_button_#{$name} {
+//         background-color: $normal_col;
+//     }
+//     .slide_button_#{$name}:hover {
+//         background-color: $hover_col;
+//     }
+
+//     .header_button .#{$name}_icon {
+//         color: $normal_col;
+//         // background-color: $normal_col;
+//     }
+// }

@@ -5,19 +5,126 @@
 // This media query is applied when the browser width is at least 768px wide.
 // This media query will override/update the styling in index.scss (mobile styling)
 @media (min-width: 768px) {
+    .slideshow_container {
 
+        [class*=slide_container] {
+            .slide_content_boundaries {
+                // left: calc(100vw/2);
+                .slide_content {
+                    width: 750px;
+                }
+            }
+        }
+    }
+
+    .card_container {
+        
+        .card_width_container {
+            width: 750px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .last_four {
+                width: 345px;
+            }
+        }
+    }
+
+    .netmatters_about_container {
+
+        .about_width_container {
+            width: 750px;
+            margin: 0 auto;
+        }
+    }
 }
 
 // This media query is applied when the browser width is at least 993px wide.
 // This media query will override/update the styling in index.scss (mobile styling), and the 768px media query.
 @media (min-width: 993px) {
+    .slideshow_container {
+        height: 759px;
 
+        [class*=slide_container] {
+
+            img {
+                height: 759px;
+            }
+
+            .slide_content_boundaries {
+                text-align: left;
+                height: 759px;
+
+                .slide_content {
+                    width: 975px;
+                }
+            }
+        }
+    }
+
+    .card_container {
+        
+        .card_width_container {
+            width: 975px;
+
+            .first_three{
+                width: 293px;
+            }
+
+            .last_four {
+                width: 455px;
+            }
+        }
+    }
+
+    .netmatters_about_container {
+
+        .about_width_container {
+            width: 975px;
+        }
+    }
 }
 
 // This media query is applied when the browser width is at least 1278px wide.
 // This media query will override/update the styling in index.scss (mobile styling), the 768px media query, and the 993px media query.
-@media (min-width: 1278px) {
+@media (min-width: 1218px) {
+    .slideshow_container {
+        [class*=slide_container] {
+            .slide_content_boundaries {
+                .slide_content {
+                    width: 1200px;
+                }
+            }
+        }
+    }
 
+    .card_container {
+        
+        .card_width_container {
+            width: 1200px;
+
+            .first_three{
+                width: 370px;
+            }
+
+            .last_four {
+                width: 270px;
+            }
+        }
+    }
+
+    .netmatters_about_container {
+
+        .about_width_container {
+            width: 1200px;
+
+            .half_width {
+                width: 600px;
+            }
+        }
+    }
 }
 
 // And because CSS is cascading, code further down, 

@@ -7,4 +7,436 @@
 body {
   margin: 0px;
 }
+
+header {
+  height: 200px;
+}
+
+.slideshow_container {
+  height: 800px;
+}
+
+.slideshow_container [class*=slide_container] {
+  position: relative;
+  width: calc(100vw - 18px);
+  height: 100%;
+}
+
+.slideshow_container [class*=slide_container] img {
+  height: 800px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.slideshow_container [class*=slide_container] .slide_content_boundaries {
+  position: absolute;
+  width: 100%;
+  height: 800px;
+  top: 0px;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(40%, rgba(255, 255, 255, 0)), color-stop(60%, rgba(255, 255, 255, 0)), to(black));
+  background: linear-gradient(90deg, black 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 60%, black 100%);
+}
+
+.slideshow_container [class*=slide_container] .slide_content_boundaries .slide_content {
+  width: 100%;
+  height: 800px;
+  padding-top: 230px;
+  margin: 0 auto 0;
+  color: white;
+}
+
+.slideshow_container [class*=slide_container] .slide_content_boundaries .slide_content h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 48px;
+  line-height: 52.8px;
+}
+
+.slideshow_container [class*=slide_container] .slide_content_boundaries .slide_content p {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.slideshow_container [class*=slide_container] .slide_content_boundaries .slide_content a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.slideshow_container [class*=slide_container] .slide_content_boundaries .slide_content a i {
+  margin-left: 15px;
+}
+
+.card_container .card_width_container {
+  padding: 30px 15px;
+}
+
+.card_container .card_width_container [class*=_card] {
+  text-align: center;
+  border: solid 1px lightgray;
+  border-radius: 3px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.card_container .card_width_container [class*=_card] .icon_circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card_container .card_width_container [class*=_card] .icon_circle i {
+  line-height: 60px;
+  font-size: 23px;
+  color: white;
+}
+
+.card_container .card_width_container [class*=_card] h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #333645;
+  font-weight: 400;
+}
+
+.card_container .card_width_container [class*=_card] .underline {
+  height: 5px;
+  width: 30px;
+  background-color: #333645;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card_container .card_width_container [class*=_card] .card_text {
+  line-height: 22px;
+  font-size: 13px;
+  color: #333645;
+}
+
+.card_container .card_width_container [class*=_card] a {
+  display: block;
+  width: 129px;
+  font-size: 17px;
+  line-height: 37px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+}
+
+.card_container .card_width_container [class*=_card]:hover h3,
+.card_container .card_width_container [class*=_card]:hover .card_text {
+  color: white;
+}
+
+.card_container .card_width_container [class*=_card]:hover .underline {
+  background-color: white;
+}
+
+.netmatters_about_container {
+  background-color: #333645;
+}
+
+.netmatters_about_container .about_width_container {
+  padding: 50px 15px;
+}
+
+.netmatters_about_container .about_width_container h3,
+.netmatters_about_container .about_width_container p {
+  color: white;
+}
+
+.netmatters_about_container .about_width_container h3 {
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.netmatters_about_container .about_width_container p {
+  line-height: 30px;
+}
+
+.netmatters_about_container .about_width_container p:first-of-type {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.netmatters_about_container .about_width_container a {
+  display: block;
+  width: 173px;
+  padding: 5px 15px;
+  font-size: 17px;
+  line-height: 35px;
+  color: #333645;
+  background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-top: 25px;
+}
+
+.netmatters_about_container .about_width_container a i {
+  margin-left: 15px;
+}
+
+.netmatters_about_container .about_width_container a:hover {
+  background-color: #ebebeb;
+}
+
+@media (min-width: 768px) {
+  .slideshow_container [class*=slide_container] .slide_content_boundaries .slide_content {
+    width: 750px;
+  }
+  .card_container .card_width_container {
+    width: 750px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card_container .card_width_container .last_four {
+    width: 345px;
+  }
+  .netmatters_about_container .about_width_container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 993px) {
+  .slideshow_container {
+    height: 759px;
+  }
+  .slideshow_container [class*=slide_container] img {
+    height: 759px;
+  }
+  .slideshow_container [class*=slide_container] .slide_content_boundaries {
+    text-align: left;
+    height: 759px;
+  }
+  .slideshow_container [class*=slide_container] .slide_content_boundaries .slide_content {
+    width: 975px;
+  }
+  .card_container .card_width_container {
+    width: 975px;
+  }
+  .card_container .card_width_container .first_three {
+    width: 293px;
+  }
+  .card_container .card_width_container .last_four {
+    width: 455px;
+  }
+  .netmatters_about_container .about_width_container {
+    width: 975px;
+  }
+}
+
+@media (min-width: 1218px) {
+  .slideshow_container [class*=slide_container] .slide_content_boundaries .slide_content {
+    width: 1200px;
+  }
+  .card_container .card_width_container {
+    width: 1200px;
+  }
+  .card_container .card_width_container .first_three {
+    width: 370px;
+  }
+  .card_container .card_width_container .last_four {
+    width: 270px;
+  }
+  .netmatters_about_container .about_width_container {
+    width: 1200px;
+  }
+  .netmatters_about_container .about_width_container .half_width {
+    width: 600px;
+  }
+}
+
+.slideshow_container .web_slide_container .slide_content_boundaries .slide_content a {
+  background-color: #926fb1;
+}
+
+.slideshow_container .web_slide_container .slide_content_boundaries .slide_content a:hover {
+  background-color: #79539a;
+}
+
+.card_container .card_width_container .web_card .icon_circle,
+.card_container .card_width_container .web_card a {
+  background-color: #926fb1;
+}
+
+.card_container .card_width_container .web_card:hover {
+  background-color: #926fb1;
+}
+
+.card_container .card_width_container .web_card:hover .icon_circle,
+.card_container .card_width_container .web_card:hover a {
+  background-color: white;
+  color: #926fb1;
+}
+
+.card_container .card_width_container .web_card:hover .icon_circle i,
+.card_container .card_width_container .web_card:hover a i {
+  color: #926fb1;
+}
+
+.slideshow_container .it_slide_container .slide_content_boundaries .slide_content a {
+  background-color: #4183d7;
+}
+
+.slideshow_container .it_slide_container .slide_content_boundaries .slide_content a:hover {
+  background-color: #286abd;
+}
+
+.card_container .card_width_container .it_card .icon_circle,
+.card_container .card_width_container .it_card a {
+  background-color: #4183d7;
+}
+
+.card_container .card_width_container .it_card:hover {
+  background-color: #4183d7;
+}
+
+.card_container .card_width_container .it_card:hover .icon_circle,
+.card_container .card_width_container .it_card:hover a {
+  background-color: white;
+  color: #4183d7;
+}
+
+.card_container .card_width_container .it_card:hover .icon_circle i,
+.card_container .card_width_container .it_card:hover a i {
+  color: #4183d7;
+}
+
+.slideshow_container .telecoms_slide_container .slide_content_boundaries .slide_content a {
+  background-color: #d64541;
+}
+
+.slideshow_container .telecoms_slide_container .slide_content_boundaries .slide_content a:hover {
+  background-color: #bc2c28;
+}
+
+.card_container .card_width_container .telecoms_card .icon_circle,
+.card_container .card_width_container .telecoms_card a {
+  background-color: #d64541;
+}
+
+.card_container .card_width_container .telecoms_card:hover {
+  background-color: #d64541;
+}
+
+.card_container .card_width_container .telecoms_card:hover .icon_circle,
+.card_container .card_width_container .telecoms_card:hover a {
+  background-color: white;
+  color: #d64541;
+}
+
+.card_container .card_width_container .telecoms_card:hover .icon_circle i,
+.card_container .card_width_container .telecoms_card:hover a i {
+  color: #d64541;
+}
+
+.slideshow_container .bespoke_slide_container .slide_content_boundaries .slide_content a {
+  background-color: #67809f;
+}
+
+.slideshow_container .bespoke_slide_container .slide_content_boundaries .slide_content a:hover {
+  background-color: #526781;
+}
+
+.card_container .card_width_container .bespoke_card .icon_circle,
+.card_container .card_width_container .bespoke_card a {
+  background-color: #67809f;
+}
+
+.card_container .card_width_container .bespoke_card:hover {
+  background-color: #67809f;
+}
+
+.card_container .card_width_container .bespoke_card:hover .icon_circle,
+.card_container .card_width_container .bespoke_card:hover a {
+  background-color: white;
+  color: #67809f;
+}
+
+.card_container .card_width_container .bespoke_card:hover .icon_circle i,
+.card_container .card_width_container .bespoke_card:hover a i {
+  color: #67809f;
+}
+
+.slideshow_container .digital_slide_container .slide_content_boundaries .slide_content a {
+  background-color: #2eec71;
+}
+
+.slideshow_container .digital_slide_container .slide_content_boundaries .slide_content a:hover {
+  background-color: #25a25a;
+}
+
+.card_container .card_width_container .digital_card .icon_circle,
+.card_container .card_width_container .digital_card a {
+  background-color: #2eec71;
+}
+
+.card_container .card_width_container .digital_card:hover {
+  background-color: #2eec71;
+}
+
+.card_container .card_width_container .digital_card:hover .icon_circle,
+.card_container .card_width_container .digital_card:hover a {
+  background-color: white;
+  color: #2eec71;
+}
+
+.card_container .card_width_container .digital_card:hover .icon_circle i,
+.card_container .card_width_container .digital_card:hover a i {
+  color: #2eec71;
+}
+
+.slideshow_container .cyber_slide_container .slide_content_boundaries .slide_content a {
+  background-color: #f62459;
+}
+
+.slideshow_container .cyber_slide_container .slide_content_boundaries .slide_content a:hover {
+  background-color: #de093f;
+}
+
+.card_container .card_width_container .cyber_card .icon_circle,
+.card_container .card_width_container .cyber_card a {
+  background-color: #f62459;
+}
+
+.card_container .card_width_container .cyber_card:hover {
+  background-color: #f62459;
+}
+
+.card_container .card_width_container .cyber_card:hover .icon_circle,
+.card_container .card_width_container .cyber_card:hover a {
+  background-color: white;
+  color: #f62459;
+}
+
+.card_container .card_width_container .cyber_card:hover .icon_circle i,
+.card_container .card_width_container .cyber_card:hover a i {
+  color: #f62459;
+}
 /*# sourceMappingURL=index.css.map */
